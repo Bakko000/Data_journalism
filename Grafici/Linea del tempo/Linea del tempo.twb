@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0208.0337                               -->
+<workbook original-version='18.1' source-build='2024.1.0 (20241.24.0208.0337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Foglio1 (Data Journalism FILM)' inline='true' name='federated.1ebkmy017d26qv1bhfo3901kriys' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Data Journalism FILM' name='excel-direct.0ayo6tn00u3dl915zohce0qtqlqt'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/alexs/OneDrive - University of Pisa/UNIPI/Primo anno/2 semestre/Data journalism/Progetto/Data Journalism FILM.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0ayo6tn00u3dl915zohce0qtqlqt' name='Foglio1' table='[Foglio1$]' type='table'>
+          <columns gridOrigin='A1:E18:no:A1:E18:0' header='yes' outcome='2'>
+            <column datatype='string' name='Film' ordinal='0' />
+            <column datatype='integer' name='Anno' ordinal='1' />
+            <column datatype='string' name='Trama' ordinal='2' />
+            <column datatype='string' name='Tematica sociale' ordinal='3' />
+            <column datatype='string' name='Immagini' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0ayo6tn00u3dl915zohce0qtqlqt' name='Foglio1' table='[Foglio1$]' type='table'>
+          <columns gridOrigin='A1:E18:no:A1:E18:0' header='yes' outcome='2'>
+            <column datatype='string' name='Film' ordinal='0' />
+            <column datatype='integer' name='Anno' ordinal='1' />
+            <column datatype='string' name='Trama' ordinal='2' />
+            <column datatype='string' name='Tematica sociale' ordinal='3' />
+            <column datatype='string' name='Immagini' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Foglio1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E18:no:A1:E18:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Film</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Film]</local-name>
+            <parent-name>[Foglio1]</parent-name>
+            <remote-alias>Film</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LIT_RIT_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Foglio1_3E45CB32ADDB4AFDB4FCE817F89562CD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Anno</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Anno]</local-name>
+            <parent-name>[Foglio1]</parent-name>
+            <remote-alias>Anno</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Foglio1_3E45CB32ADDB4AFDB4FCE817F89562CD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trama</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Trama]</local-name>
+            <parent-name>[Foglio1]</parent-name>
+            <remote-alias>Trama</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LIT_RIT_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Foglio1_3E45CB32ADDB4AFDB4FCE817F89562CD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tematica sociale</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Tematica sociale]</local-name>
+            <parent-name>[Foglio1]</parent-name>
+            <remote-alias>Tematica sociale</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LIT_RIT_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Foglio1_3E45CB32ADDB4AFDB4FCE817F89562CD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Immagini</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Immagini]</local-name>
+            <parent-name>[Foglio1]</parent-name>
+            <remote-alias>Immagini</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LIT_RIT_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Foglio1_3E45CB32ADDB4AFDB4FCE817F89562CD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Anno]' role='dimension' type='quantitative' />
+      <column caption='Placeholder' datatype='integer' name='[Calculation_193936298995408900]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MIN(0)' />
+      </column>
+      <column datatype='string' name='[Immagini]' role='dimension' semantic-role='[URL]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Foglio1' datatype='table' name='[__tableau_internal_object_id__].[Foglio1_3E45CB32ADDB4AFDB4FCE817F89562CD]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;IT&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Foglio1' id='Foglio1_3E45CB32ADDB4AFDB4FCE817F89562CD'>
+            <properties context=''>
+              <relation connection='excel-direct.0ayo6tn00u3dl915zohce0qtqlqt' name='Foglio1' table='[Foglio1$]' type='table'>
+                <columns gridOrigin='A1:E18:no:A1:E18:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Film' ordinal='0' />
+                  <column datatype='integer' name='Anno' ordinal='1' />
+                  <column datatype='string' name='Trama' ordinal='2' />
+                  <column datatype='string' name='Tematica sociale' ordinal='3' />
+                  <column datatype='string' name='Immagini' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Foglio 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Yu Gothic Light' fontsize='28'>Timeline</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Foglio1 (Data Journalism FILM)' name='federated.1ebkmy017d26qv1bhfo3901kriys' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ebkmy017d26qv1bhfo3901kriys'>
+            <column datatype='integer' name='[Anno]' role='dimension' type='quantitative' />
+            <column caption='Placeholder' datatype='integer' name='[Calculation_193936298995408900]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MIN(0)' />
+            </column>
+            <column datatype='string' name='[Film]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Tematica sociale]' role='dimension' type='nominal' />
+            <column-instance column='[Anno]' derivation='None' name='[none:Anno:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Film]' derivation='None' name='[none:Film:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Tematica sociale]' derivation='None' name='[none:Tematica sociale:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_193936298995408900]' derivation='User' name='[usr:Calculation_193936298995408900:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1ebkmy017d26qv1bhfo3901kriys].[usr:Calculation_193936298995408900:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1ebkmy017d26qv1bhfo3901kriys].[none:Anno:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='total' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='5' />
+            <format attr='stroke-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1ebkmy017d26qv1bhfo3901kriys].[none:Anno:qk]' />
+              <lod column='[federated.1ebkmy017d26qv1bhfo3901kriys].[none:Film:nk]' />
+              <lod column='[federated.1ebkmy017d26qv1bhfo3901kriys].[none:Tematica sociale:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontsize='11'>Anno:&#9;</run>
+                <run bold='true' fontsize='11'><![CDATA[<[federated.1ebkmy017d26qv1bhfo3901kriys].[none:Anno:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='11'>Film:&#9;</run>
+                <run bold='true' fontsize='11'><![CDATA[<[federated.1ebkmy017d26qv1bhfo3901kriys].[none:Film:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontsize='11'>Tematica sociale:&#9;</run>
+                <run bold='true' fontsize='11'><![CDATA[<[federated.1ebkmy017d26qv1bhfo3901kriys].[none:Tematica sociale:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>Æ </run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#a7acad' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='506' />
+                <format attr='maxheight' value='506' />
+                <format attr='minwidth' value='1563' />
+                <format attr='maxwidth' value='1563' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ebkmy017d26qv1bhfo3901kriys].[usr:Calculation_193936298995408900:qk]</rows>
+        <cols>[federated.1ebkmy017d26qv1bhfo3901kriys].[none:Anno:qk]</cols>
+      </table>
+      <simple-id uuid='{1DBABC67-C855-4F32-851B-C6FD16E28D2C}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Foglio 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ebkmy017d26qv1bhfo3901kriys].[none:Anno:qk]</field>
+            <field>[federated.1ebkmy017d26qv1bhfo3901kriys].[none:Calculation_193936298994921475:qk]</field>
+            <field>[federated.1ebkmy017d26qv1bhfo3901kriys].[none:F5:ok]</field>
+            <field>[federated.1ebkmy017d26qv1bhfo3901kriys].[none:Film:nk]</field>
+            <field>[federated.1ebkmy017d26qv1bhfo3901kriys].[none:Immagini:nk]</field>
+            <field>[federated.1ebkmy017d26qv1bhfo3901kriys].[none:Tematica sociale:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{973F25AA-13F1-45D7-9FC6-6BB680A6E79D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Foglio 1' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
