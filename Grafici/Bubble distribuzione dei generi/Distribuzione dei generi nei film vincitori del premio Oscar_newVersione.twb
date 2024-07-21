@@ -1,16 +1,19 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20241.24.0208.0337                               -->
-<workbook original-version='18.1' source-build='2024.1.0 (20241.24.0208.0337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2024.1.0 (20241.24.0208.0337)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
     <_.fcp.MarkAnimation.true...MarkAnimation />
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
     <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
     <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
     <WindowsPersistSimpleIdentifiers />
   </document-format-change-manifest>
+  <repository-location id='DistribuzionedeigenerineifilmvincitoridelpremioOscar' path='/workbooks' revision='1.4' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -25,7 +28,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='VincitoriOscarGeneri' name='excel-direct.00ansp51uh7fhk1acfe3n149ux0q'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/alexs/OneDrive - University of Pisa/UNIPI/Primo anno/2 semestre/Data journalism/Progetto/Dataset/VincitoriOscarGeneri.xlsx' interpretationMode='0' password='' server='' validate='no' />
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/alexs/OneDrive - University of Pisa/UNIPI/Primo anno/2 semestre/Data journalism/Progetto/Dataset/VincitoriOscarGeneri.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.00ansp51uh7fhk1acfe3n149ux0q' name='Foglio1' table='[Foglio1$]' type='table'>
@@ -72,6 +75,7 @@
             <column datatype='string' name='F18' ordinal='17' />
           </columns>
         </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-refresh-mode='' incremental-updates='' required-client-version='' />
         <metadata-records>
           <metadata-record class='capability'>
             <remote-name />
@@ -384,6 +388,189 @@
       <column caption='Id Imdb' datatype='integer' name='[id_imdb]' role='dimension' type='ordinal' />
       <column caption='Rate' datatype='integer' name='[rate]' role='measure' type='quantitative' />
       <column caption='Rate Count' datatype='integer' name='[rate_count]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='it_IT' class='hyper' dbname='C:/Users/alexs/OneDrive - University of Pisa/UNIPI/Primo anno/2 semestre/Data journalism/Progetto/Grafici/Bubble distribuzione dei generi/Foglio1 (VincitoriOscarGeneri).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/21/2024 09:30:10 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-refresh-mode='' incremental-updates='' required-client-version=''>
+            <refresh-event add-from-file-path='Foglio1 (VincitoriOscarGeneri)' increment-value='%null%' refresh-type='create' rows-inserted='96' timestamp-start='2024-07-21 09:30:09.321' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Film</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Film]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Film</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Foglio1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>96</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Foglio1_39B9816BBCCE44A1963F52DE9A9E3FE9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Foglio1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>96</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Foglio1_39B9816BBCCE44A1963F52DE9A9E3FE9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Position</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Position]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Position</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Foglio1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Foglio1_39B9816BBCCE44A1963F52DE9A9E3FE9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Edition</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Edition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Edition</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Foglio1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>96</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Foglio1_39B9816BBCCE44A1963F52DE9A9E3FE9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id_imdb</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id_imdb]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id_imdb</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Foglio1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Foglio1_39B9816BBCCE44A1963F52DE9A9E3FE9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rate</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Foglio1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Foglio1_39B9816BBCCE44A1963F52DE9A9E3FE9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rate_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[rate_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rate_count</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Foglio1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>93</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Foglio1_39B9816BBCCE44A1963F52DE9A9E3FE9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>duration</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>duration</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Foglio1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Foglio1_39B9816BBCCE44A1963F52DE9A9E3FE9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Genre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Genre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Genre</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Foglio1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Foglio1_39B9816BBCCE44A1963F52DE9A9E3FE9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Foglio1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Foglio1_39B9816BBCCE44A1963F52DE9A9E3FE9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>budget</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[budget]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>budget</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Foglio1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>63</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Foglio1_39B9816BBCCE44A1963F52DE9A9E3FE9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gross</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[gross]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gross</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Foglio1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>70</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Foglio1_39B9816BBCCE44A1963F52DE9A9E3FE9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;IT&quot;' />
@@ -416,6 +603,9 @@
                 </columns>
               </relation>
             </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
           </object>
         </objects>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
@@ -436,17 +626,57 @@
             <datasource caption='Foglio1 (VincitoriOscarGeneri)' name='federated.17lefe70shge230zwsime1pfb0z3' />
           </datasources>
           <datasource-dependencies datasource='federated.17lefe70shge230zwsime1pfb0z3'>
+            <column caption='avg(0)' datatype='real' name='[Calculation_1221319966042169345]' role='measure' type='quantitative' user:unnamed='Distribuzione dei generi nei film vincitori del premio Oscar'>
+              <calculation class='tableau' formula='avg(0)' />
+            </column>
+            <column caption='avg(0.0)' datatype='real' name='[Calculation_1221319966045835268]' role='measure' type='quantitative' user:unnamed='Distribuzione dei generi nei film vincitori del premio Oscar'>
+              <calculation class='tableau' formula='avg(0.0)' />
+            </column>
             <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Genre]' role='dimension' type='nominal' />
             <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
             <column-instance column='[Genre]' derivation='Count' name='[pcto:cnt:Genre:qk]' pivot='key' type='quantitative'>
               <table-calc ordering-type='Rows' type='PctTotal' />
             </column-instance>
+            <column-instance column='[Calculation_1221319966042169345]' derivation='User' name='[usr:Calculation_1221319966042169345:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1221319966045835268]' derivation='User' name='[usr:Calculation_1221319966045835268:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <aggregation value='true' />
         </view>
         <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.17lefe70shge230zwsime1pfb0z3].[usr:Calculation_1221319966042169345:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.17lefe70shge230zwsime1pfb0z3].[usr:Calculation_1221319966045835268:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.17lefe70shge230zwsime1pfb0z3].[usr:Calculation_1221319966045835268:qk]' scope='rows' value='false' />
+          </style-rule>
           <style-rule element='cell'>
             <format attr='height' value='985' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' scope='rows' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
           </style-rule>
         </style>
         <panes>
@@ -454,29 +684,144 @@
             <view>
               <breakdown value='auto' />
             </view>
-            <mark class='Circle' />
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Genre:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17lefe70shge230zwsime1pfb0z3].[none:Genre:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Conteggio:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17lefe70shge230zwsime1pfb0z3].[pcto:cnt:Genre:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.17lefe70shge230zwsime1pfb0z3].[none:Genre:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-family' value='Merriweather' />
+                <format attr='font-size' value='12' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.4612706899642944' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='636' />
+                <format attr='maxheight' value='636' />
+                <format attr='minwidth' value='1558' />
+                <format attr='maxwidth' value='1558' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17lefe70shge230zwsime1pfb0z3].[usr:Calculation_1221319966042169345:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
             <encodings>
               <size column='[federated.17lefe70shge230zwsime1pfb0z3].[pcto:cnt:Genre:qk]' />
               <color column='[federated.17lefe70shge230zwsime1pfb0z3].[none:Genre:nk]' />
               <text column='[federated.17lefe70shge230zwsime1pfb0z3].[none:Genre:nk]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Genre:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17lefe70shge230zwsime1pfb0z3].[none:Genre:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Conteggio:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17lefe70shge230zwsime1pfb0z3].[pcto:cnt:Genre:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='14'>&lt;</run>
+                <run fontsize='14'>[federated.17lefe70shge230zwsime1pfb0z3].[none:Genre:nk]</run>
+                <run fontsize='14'>&gt;</run>
+              </formatted-text>
+            </customized-label>
             <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+                <format attr='wrap' value='auto' />
+              </style-rule>
               <style-rule element='datalabel'>
                 <format attr='color-mode' value='user' />
                 <format attr='font-family' value='Merriweather' />
                 <format attr='font-size' value='12' />
-                <format attr='color' value='#ffffff' />
+                <format attr='color' value='#000000' />
               </style-rule>
               <style-rule element='mark'>
-                <format attr='mark-labels-cull' value='true' />
                 <format attr='mark-labels-line-first' value='true' />
                 <format attr='mark-labels-line-last' value='true' />
                 <format attr='mark-labels-range-min' value='true' />
                 <format attr='mark-labels-range-max' value='true' />
-                <format attr='mark-labels-mode' value='all' />
                 <format attr='mark-labels-range-scope' value='pane' />
                 <format attr='mark-labels-range-field' value='' />
                 <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='6.110161304473877' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17lefe70shge230zwsime1pfb0z3].[usr:Calculation_1221319966045835268:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-family' value='Merriweather' />
+                <format attr='font-size' value='12' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='size' value='4.1456303596496582' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='has-stroke' value='false' />
               </style-rule>
               <style-rule element='pane'>
                 <format attr='minheight' value='-1' />
@@ -485,7 +830,7 @@
             </style>
           </pane>
         </panes>
-        <rows />
+        <rows>([federated.17lefe70shge230zwsime1pfb0z3].[usr:Calculation_1221319966042169345:qk] + [federated.17lefe70shge230zwsime1pfb0z3].[usr:Calculation_1221319966045835268:qk])</rows>
         <cols />
       </table>
       <simple-id uuid='{3689C0F0-4C16-4696-B4F8-FB125094F582}' />
@@ -512,13 +857,9 @@
             <card type='title' />
           </strip>
         </edge>
-        <edge name='right'>
-          <strip size='170'>
-            <card pane-specification-id='0' param='[federated.17lefe70shge230zwsime1pfb0z3].[none:Genre:nk]' type='color' />
-          </strip>
-        </edge>
       </cards>
       <viewpoint>
+        <zoom type='fit-width' />
         <highlight>
           <color-one-way>
             <field>[federated.17lefe70shge230zwsime1pfb0z3].[none:Film:nk]</field>
@@ -532,30 +873,56 @@
   <thumbnails>
     <thumbnail height='192' name='Distribuzione dei generi nei film vincitori del premio Oscar' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
-      AAAEzklEQVR4nO3ZzYsbdRzH8c9vHpJp9smt3e2udUFBihUqSkEQehI8FA/14kHw2D/H/6KH
-      4smT6MlSBEFaEDwoHiwKW3e7231od7uZSTLz81CrIPSg3c0kft6vS3IIme8keYfvJCHGGAUY
-      CiGEpO0hgDYRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKxlbQ+A
-      8YjNSLHpK44On9wOH6quNhWHe4qjAzWjA8WmlOJQsRkqhEQKuUKSK6SzCtmcQjavtLus0FlS
-      ks4opD2FtCclhUIIbZ/if0IA/ztRMT69O1R99KuGBz+o7v+mptpSU91XM9yT4uA5jhEU0lkl
-      3SUlnWWlxarSmdeVz72hkL/496OmIIoQ418vF6ZcrEuNju6qfvyzBvt3VB/+pNj0xzhBUNJd
-      Ub5wSdn8m8p6ryntrkgTGkIIIRDAlIt1qbq6r9Gj7zXYvaW63FAcPZLU8tuadJXkp5XNXlD3
-      zHtKT72ikC8+Wa0mBAFMqRij1JQa7t9WtfuNRoc/Kg532x7r2UKmtPeq8vm31D3zvpLiJUlJ
-      6ysSAUyZGKPi4IGqnZuqtr9UU222PdK/F1LlL7yj7tIV5QtvK4T2LkMJYErEWKspNzTY+1bV
-      9ldqBltSrNse67mEtKds7qK6yx8om72gJJsd/wwEMNmerjrl5ueqdm6qKdfbHun4JYXyuYsq
-      zn2sbOb8n9cI41mNCGCCxWao4f536v9+Q/XR3bbHOXkhV3f5ioqzHyotVsdzSAKYPDHWqst1
-      lfduaPDwtlQftT3SGCVKihUVqx+ps3j5xNciApgwsRmoevC1yo3PpvMC97iETJ3Fd1Wc+0Rp
-      sXZivxYRwIQ5/OVTDXZvSXHU9igTIeks6dTaNXVOXz6R/w8IYEI0o8eqtr9Qf/06H/5/SgoV
-      Z6+qWLmqJF881qcmgNZF1dWW+veua7DDN/8zhVT5wiX11q4pKV4+tpUohBD+ALN8GoehabHd
-      AAAAAElFTkSuQmCC
+      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
     </thumbnail>
   </thumbnails>
 </workbook>

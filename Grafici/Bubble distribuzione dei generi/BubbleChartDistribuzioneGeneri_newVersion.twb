@@ -436,17 +436,57 @@
             <datasource caption='Foglio1 (VincitoriOscarGeneri)' name='federated.17lefe70shge230zwsime1pfb0z3' />
           </datasources>
           <datasource-dependencies datasource='federated.17lefe70shge230zwsime1pfb0z3'>
+            <column caption='avg(0)' datatype='real' name='[Calculation_1221319966042169345]' role='measure' type='quantitative' user:unnamed='Distribuzione dei generi nei film vincitori del premio Oscar'>
+              <calculation class='tableau' formula='avg(0)' />
+            </column>
+            <column caption='avg(0.0)' datatype='real' name='[Calculation_1221319966045835268]' role='measure' type='quantitative' user:unnamed='Distribuzione dei generi nei film vincitori del premio Oscar'>
+              <calculation class='tableau' formula='avg(0.0)' />
+            </column>
             <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Genre]' role='dimension' type='nominal' />
             <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
             <column-instance column='[Genre]' derivation='Count' name='[pcto:cnt:Genre:qk]' pivot='key' type='quantitative'>
               <table-calc ordering-type='Rows' type='PctTotal' />
             </column-instance>
+            <column-instance column='[Calculation_1221319966042169345]' derivation='User' name='[usr:Calculation_1221319966042169345:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1221319966045835268]' derivation='User' name='[usr:Calculation_1221319966045835268:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <aggregation value='true' />
         </view>
         <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.17lefe70shge230zwsime1pfb0z3].[usr:Calculation_1221319966042169345:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.17lefe70shge230zwsime1pfb0z3].[usr:Calculation_1221319966045835268:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.17lefe70shge230zwsime1pfb0z3].[usr:Calculation_1221319966045835268:qk]' scope='rows' value='false' />
+          </style-rule>
           <style-rule element='cell'>
             <format attr='height' value='985' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' scope='rows' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
           </style-rule>
         </style>
         <panes>
@@ -454,29 +494,141 @@
             <view>
               <breakdown value='auto' />
             </view>
-            <mark class='Circle' />
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Genre:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17lefe70shge230zwsime1pfb0z3].[none:Genre:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Conteggio:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17lefe70shge230zwsime1pfb0z3].[pcto:cnt:Genre:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.17lefe70shge230zwsime1pfb0z3].[none:Genre:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-family' value='Merriweather' />
+                <format attr='font-size' value='12' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.4612706899642944' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17lefe70shge230zwsime1pfb0z3].[usr:Calculation_1221319966042169345:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
             <encodings>
               <size column='[federated.17lefe70shge230zwsime1pfb0z3].[pcto:cnt:Genre:qk]' />
               <color column='[federated.17lefe70shge230zwsime1pfb0z3].[none:Genre:nk]' />
               <text column='[federated.17lefe70shge230zwsime1pfb0z3].[none:Genre:nk]' />
             </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Genre:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17lefe70shge230zwsime1pfb0z3].[none:Genre:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Conteggio:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17lefe70shge230zwsime1pfb0z3].[pcto:cnt:Genre:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='14'>&lt;</run>
+                <run fontsize='14'>[federated.17lefe70shge230zwsime1pfb0z3].[none:Genre:nk]</run>
+                <run fontsize='14'>&gt;</run>
+              </formatted-text>
+            </customized-label>
             <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+                <format attr='wrap' value='auto' />
+              </style-rule>
               <style-rule element='datalabel'>
                 <format attr='color-mode' value='user' />
                 <format attr='font-family' value='Merriweather' />
                 <format attr='font-size' value='12' />
-                <format attr='color' value='#ffffff' />
+                <format attr='color' value='#000000' />
               </style-rule>
               <style-rule element='mark'>
-                <format attr='mark-labels-cull' value='true' />
                 <format attr='mark-labels-line-first' value='true' />
                 <format attr='mark-labels-line-last' value='true' />
                 <format attr='mark-labels-range-min' value='true' />
                 <format attr='mark-labels-range-max' value='true' />
-                <format attr='mark-labels-mode' value='all' />
                 <format attr='mark-labels-range-scope' value='pane' />
                 <format attr='mark-labels-range-field' value='' />
                 <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='8.0265865325927734' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17lefe70shge230zwsime1pfb0z3].[usr:Calculation_1221319966045835268:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <customized-tooltip>
+              <formatted-text />
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-family' value='Merriweather' />
+                <format attr='font-size' value='12' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='size' value='5.9130978584289551' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='has-stroke' value='false' />
               </style-rule>
               <style-rule element='pane'>
                 <format attr='minheight' value='-1' />
@@ -485,7 +637,7 @@
             </style>
           </pane>
         </panes>
-        <rows />
+        <rows>([federated.17lefe70shge230zwsime1pfb0z3].[usr:Calculation_1221319966042169345:qk] + [federated.17lefe70shge230zwsime1pfb0z3].[usr:Calculation_1221319966045835268:qk])</rows>
         <cols />
       </table>
       <simple-id uuid='{3689C0F0-4C16-4696-B4F8-FB125094F582}' />
@@ -514,11 +666,13 @@
         </edge>
         <edge name='right'>
           <strip size='170'>
-            <card pane-specification-id='0' param='[federated.17lefe70shge230zwsime1pfb0z3].[none:Genre:nk]' type='color' />
+            <card pane-specification-id='1' param='[federated.17lefe70shge230zwsime1pfb0z3].[none:Genre:nk]' type='color' />
+            <card pane-specification-id='1' param='[federated.17lefe70shge230zwsime1pfb0z3].[pcto:cnt:Genre:qk]' type='size' />
           </strip>
         </edge>
       </cards>
       <viewpoint>
+        <zoom type='fit-width' />
         <highlight>
           <color-one-way>
             <field>[federated.17lefe70shge230zwsime1pfb0z3].[none:Film:nk]</field>
@@ -532,30 +686,100 @@
   <thumbnails>
     <thumbnail height='192' name='Distribuzione dei generi nei film vincitori del premio Oscar' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
-      AAAEzklEQVR4nO3ZzYsbdRzH8c9vHpJp9smt3e2udUFBihUqSkEQehI8FA/14kHw2D/H/6KH
-      4smT6MlSBEFaEDwoHiwKW3e7231od7uZSTLz81CrIPSg3c0kft6vS3IIme8keYfvJCHGGAUY
-      CiGEpO0hgDYRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwR
-      AKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKwRAKxlbQ+A
-      8YjNSLHpK44On9wOH6quNhWHe4qjAzWjA8WmlOJQsRkqhEQKuUKSK6SzCtmcQjavtLus0FlS
-      ks4opD2FtCclhUIIbZ/if0IA/ztRMT69O1R99KuGBz+o7v+mptpSU91XM9yT4uA5jhEU0lkl
-      3SUlnWWlxarSmdeVz72hkL/496OmIIoQ418vF6ZcrEuNju6qfvyzBvt3VB/+pNj0xzhBUNJd
-      Ub5wSdn8m8p6ryntrkgTGkIIIRDAlIt1qbq6r9Gj7zXYvaW63FAcPZLU8tuadJXkp5XNXlD3
-      zHtKT72ikC8+Wa0mBAFMqRij1JQa7t9WtfuNRoc/Kg532x7r2UKmtPeq8vm31D3zvpLiJUlJ
-      6ysSAUyZGKPi4IGqnZuqtr9UU222PdK/F1LlL7yj7tIV5QtvK4T2LkMJYErEWKspNzTY+1bV
-      9ldqBltSrNse67mEtKds7qK6yx8om72gJJsd/wwEMNmerjrl5ueqdm6qKdfbHun4JYXyuYsq
-      zn2sbOb8n9cI41mNCGCCxWao4f536v9+Q/XR3bbHOXkhV3f5ioqzHyotVsdzSAKYPDHWqst1
-      lfduaPDwtlQftT3SGCVKihUVqx+ps3j5xNciApgwsRmoevC1yo3PpvMC97iETJ3Fd1Wc+0Rp
-      sXZivxYRwIQ5/OVTDXZvSXHU9igTIeks6dTaNXVOXz6R/w8IYEI0o8eqtr9Qf/06H/5/SgoV
-      Z6+qWLmqJF881qcmgNZF1dWW+veua7DDN/8zhVT5wiX11q4pKV4+tpUohBD+ALN8GoehabHd
-      AAAAAElFTkSuQmCC
+      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
+      QmCC
     </thumbnail>
   </thumbnails>
 </workbook>

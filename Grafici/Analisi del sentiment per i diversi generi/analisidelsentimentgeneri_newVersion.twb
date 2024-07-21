@@ -1,0 +1,1445 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0208.0337                               -->
+<workbook original-version='18.1' source-build='2024.1.0 (20241.24.0208.0337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='combined_sentiments' inline='true' name='federated.0du8uu51840u6a1e9yoi01kgikcf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='combined_sentiments' name='textscan.0x3vsbs1legu4p194rl4h148108z'>
+            <connection class='textscan' directory='C:/Users/alexs/OneDrive - University of Pisa/UNIPI/Primo anno/2 semestre/Data journalism/Progetto/Dataset' filename='combined_sentiments.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0x3vsbs1legu4p194rl4h148108z' name='combined_sentiments.csv' table='[combined_sentiments#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='it_IT'>
+            <column datatype='string' name='Drama' ordinal='0' />
+            <column datatype='string' name='Comedy' ordinal='1' />
+            <column datatype='string' name='Crime' ordinal='2' />
+            <column datatype='string' name='Adventure' ordinal='3' />
+            <column datatype='string' name='Biography' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0x3vsbs1legu4p194rl4h148108z' name='combined_sentiments.csv' table='[combined_sentiments#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='it_IT'>
+            <column datatype='string' name='Drama' ordinal='0' />
+            <column datatype='string' name='Comedy' ordinal='1' />
+            <column datatype='string' name='Crime' ordinal='2' />
+            <column datatype='string' name='Adventure' ordinal='3' />
+            <column datatype='string' name='Biography' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[combined_sentiments.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;it&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;it_IT&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Drama</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Drama]</local-name>
+            <parent-name>[combined_sentiments.csv]</parent-name>
+            <remote-alias>Drama</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_sentiments.csv_DEDB6011BDE24273A805DB5EE3F320F7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Comedy</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Comedy]</local-name>
+            <parent-name>[combined_sentiments.csv]</parent-name>
+            <remote-alias>Comedy</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_sentiments.csv_DEDB6011BDE24273A805DB5EE3F320F7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crime</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Crime]</local-name>
+            <parent-name>[combined_sentiments.csv]</parent-name>
+            <remote-alias>Crime</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_sentiments.csv_DEDB6011BDE24273A805DB5EE3F320F7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Adventure</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Adventure]</local-name>
+            <parent-name>[combined_sentiments.csv]</parent-name>
+            <remote-alias>Adventure</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_sentiments.csv_DEDB6011BDE24273A805DB5EE3F320F7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Biography</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Biography]</local-name>
+            <parent-name>[combined_sentiments.csv]</parent-name>
+            <remote-alias>Biography</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[combined_sentiments.csv_DEDB6011BDE24273A805DB5EE3F320F7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Adventure (Positivi)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Adventure]' new-bin='true' />
+      </column>
+      <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Adventure]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Biography (Positivi)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Biography]' new-bin='true' />
+      </column>
+      <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Biography]' role='dimension' type='nominal' />
+      <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Comedy]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Crime (Positivi)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Crime]' new-bin='true' />
+      </column>
+      <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Crime]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Drama (Positivi)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Drama]' new-bin='true' />
+      </column>
+      <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Drama]' role='dimension' type='nominal' />
+      <column caption='Comedy(Positivi)' datatype='string' name='[Positivi]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Comedy]' new-bin='true' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='combined_sentiments.csv' datatype='table' name='[__tableau_internal_object_id__].[combined_sentiments.csv_DEDB6011BDE24273A805DB5EE3F320F7]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[Positivi]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Positive&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Neutral&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Negative&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Crime (Positivi)]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Positive&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Neutral&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Negative&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Adventure (Positivi)]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Positive&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Neutral&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Negative&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Biography (Positivi)]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Positive&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Neutral&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Negative&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Drama (Positivi)]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Positive&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Neutral&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Negative&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;IT&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='combined_sentiments.csv' id='combined_sentiments.csv_DEDB6011BDE24273A805DB5EE3F320F7'>
+            <properties context=''>
+              <relation connection='textscan.0x3vsbs1legu4p194rl4h148108z' name='combined_sentiments.csv' table='[combined_sentiments#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='it_IT'>
+                  <column datatype='string' name='Drama' ordinal='0' />
+                  <column datatype='string' name='Comedy' ordinal='1' />
+                  <column datatype='string' name='Crime' ordinal='2' />
+                  <column datatype='string' name='Adventure' ordinal='3' />
+                  <column datatype='string' name='Biography' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Adventure BarChart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Merriweather' fontsize='11'>Avventura</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_sentiments' name='federated.0du8uu51840u6a1e9yoi01kgikcf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0du8uu51840u6a1e9yoi01kgikcf'>
+            <column datatype='string' name='[Adventure (Positivi)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Adventure]' new-bin='true' />
+            </column>
+            <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Adventure]' role='dimension' type='nominal' />
+            <column-instance column='[Adventure]' derivation='Count' name='[pcto:cnt:Adventure:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Adventure (Positivi)]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Adventure (Positivi)]' />
+              <groupfilter function='member' level='[Adventure (Positivi)]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Adventure:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Adventure (Positivi)]' value='239' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Adventure (Positivi)]' />
+              <text column='[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Adventure:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Sentiment:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0du8uu51840u6a1e9yoi01kgikcf].[Adventure (Positivi)]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Conteggio di Adventure:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Adventure:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Merriweather Black' fontsize='12'>&lt;</run>
+                <run fontname='Merriweather Black' fontsize='12'>[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Adventure:qk]</run>
+                <run fontname='Merriweather Black' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Adventure:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{AC4B6FC4-A509-40DC-8B66-D9DB741FD030}' />
+    </worksheet>
+    <worksheet name='Biography BarChart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Merriweather' fontsize='11'>Biografia</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_sentiments' name='federated.0du8uu51840u6a1e9yoi01kgikcf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0du8uu51840u6a1e9yoi01kgikcf'>
+            <column datatype='string' name='[Biography (Positivi)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Biography]' new-bin='true' />
+            </column>
+            <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Biography]' role='dimension' type='nominal' />
+            <column-instance column='[Biography]' derivation='Count' name='[pcto:cnt:Biography:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Biography (Positivi)]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Biography (Positivi)]' />
+              <groupfilter function='member' level='[Biography (Positivi)]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Biography:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Biography (Positivi)]' value='235' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Biography (Positivi)]' />
+              <text column='[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Biography:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Sentiment:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0du8uu51840u6a1e9yoi01kgikcf].[Biography (Positivi)]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Conteggio di Biography:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Biography:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Merriweather Black' fontsize='12'>&lt;</run>
+                <run fontname='Merriweather Black' fontsize='12'>[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Biography:qk]</run>
+                <run fontname='Merriweather Black' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Biography:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{3B417ABC-7B2A-41FE-B92A-D95569318409}' />
+    </worksheet>
+    <worksheet name='Commedia BarChart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Merriweather' fontsize='11'>Commedia</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_sentiments' name='federated.0du8uu51840u6a1e9yoi01kgikcf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0du8uu51840u6a1e9yoi01kgikcf'>
+            <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Comedy]' role='dimension' type='nominal' />
+            <column caption='Comedy(Positivi)' datatype='string' name='[Positivi]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Comedy]' new-bin='true' />
+            </column>
+            <column-instance column='[Comedy]' derivation='Count' name='[pcto:cnt:Comedy:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Positivi]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Positivi]' />
+              <groupfilter function='member' level='[Positivi]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Comedy:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Positivi]' value='227' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Positivi]' />
+              <text column='[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Comedy:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Sentiment:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0du8uu51840u6a1e9yoi01kgikcf].[Positivi]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Conteggio di Comedy:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Comedy:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='12'>&lt;</run>
+                <run fontsize='12'>[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Comedy:qk]</run>
+                <run fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-family' value='Merriweather Black' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Comedy:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{C3DEED07-ECB5-4C4B-9597-4BC89F2874CB}' />
+    </worksheet>
+    <worksheet name='Crime BarChart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Merriweather' fontsize='11'>Crimine</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_sentiments' name='federated.0du8uu51840u6a1e9yoi01kgikcf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0du8uu51840u6a1e9yoi01kgikcf'>
+            <column datatype='string' name='[Crime (Positivi)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Crime]' new-bin='true' />
+            </column>
+            <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Crime]' role='dimension' type='nominal' />
+            <column-instance column='[Crime]' derivation='Count' name='[pcto:cnt:Crime:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Crime (Positivi)]' kind='hide'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Crime (Positivi)]' />
+              <groupfilter function='member' level='[Crime (Positivi)]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Crime:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Crime (Positivi)]' value='235' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Crime (Positivi)]' />
+              <text column='[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Crime:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Sentiment:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0du8uu51840u6a1e9yoi01kgikcf].[Crime (Positivi)]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Conteggio di Crime:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Crime:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Merriweather Black' fontsize='12'>&lt;</run>
+                <run fontname='Merriweather Black' fontsize='12'>[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Crime:qk]</run>
+                <run fontname='Merriweather Black' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Crime:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{0A094560-301B-46DE-A0A0-97E70BEA53E7}' />
+    </worksheet>
+    <worksheet name='Drama BarChart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Merriweather' fontsize='11'>Dramma</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='combined_sentiments' name='federated.0du8uu51840u6a1e9yoi01kgikcf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0du8uu51840u6a1e9yoi01kgikcf'>
+            <column datatype='string' name='[Drama (Positivi)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Drama]' new-bin='true' />
+            </column>
+            <column aggregation='CountD' datatype='string' default-role='measure' default-type='quantitative' name='[Drama]' role='dimension' type='nominal' />
+            <column-instance column='[Drama]' derivation='Count' name='[pcto:cnt:Drama:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Drama:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Drama (Positivi)]' value='231' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Drama (Positivi)]' />
+              <text column='[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Drama:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Sentiment:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0du8uu51840u6a1e9yoi01kgikcf].[Drama (Positivi)]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Conteggio di Drama:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Drama:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Merriweather Black' fontsize='12'>&lt;</run>
+                <run fontname='Merriweather Black' fontsize='12'>[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Drama:qk]</run>
+                <run fontname='Merriweather Black' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#000000' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0du8uu51840u6a1e9yoi01kgikcf].[pcto:cnt:Drama:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{DDBC7133-5C26-410F-B049-FC36EE368D4A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Analisi del sentiment nei diversi generi'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Merriweather Black' fontsize='16'>Analisi del sentiment nei diversi generi (Recensioni pubblico)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='13' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='6381' id='14' type-v2='title' w='98828' x='586' y='1042'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91535' id='11' type-v2='layout-basic' w='98828' x='586' y='7423'>
+              <zone h='91535' id='3' name='Commedia BarChart' w='19885' x='586' y='7423'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='91535' id='5' name='Crime BarChart' w='19887' x='40859' y='7423'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='91535' id='6' name='Adventure BarChart' w='19484' x='60746' y='7423'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='91535' id='7' name='Biography BarChart' w='19184' x='80230' y='7423'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='91535' id='8' name='Drama BarChart' w='20388' x='20471' y='7423'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontname='Merriweather Black' fontsize='16'>Analisi del sentiment nei diversi generi (Recensioni pubblico)</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1550' minheight='1550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='28' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='27' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone h='6381' id='14' type-v2='title' w='98828' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91535' id='3' is-fixed='true' name='Commedia BarChart' w='19885' x='586' y='7423'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91535' id='8' is-fixed='true' name='Drama BarChart' w='20388' x='20471' y='7423'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91535' id='5' is-fixed='true' name='Crime BarChart' w='19887' x='40859' y='7423'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91535' id='6' is-fixed='true' name='Adventure BarChart' w='19484' x='60746' y='7423'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91535' id='7' is-fixed='true' name='Biography BarChart' w='19184' x='80230' y='7423'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C0AD0394-222D-4F53-89C9-E1834A214B37}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Commedia BarChart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Positivi]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0du8uu51840u6a1e9yoi01kgikcf].[Negativi]</field>
+            <field>[federated.0du8uu51840u6a1e9yoi01kgikcf].[Positivi]</field>
+            <field>[federated.0du8uu51840u6a1e9yoi01kgikcf].[none:Adventure:nk]</field>
+            <field>[federated.0du8uu51840u6a1e9yoi01kgikcf].[none:Comedy:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D994332C-F583-4E96-B941-B0322E3F0688}' />
+    </window>
+    <window class='worksheet' name='Crime BarChart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Crime (Positivi)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0du8uu51840u6a1e9yoi01kgikcf].[Crime (Positivi)]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4913A47F-1A1B-4D79-9952-04E2D3957CF9}' />
+    </window>
+    <window class='worksheet' name='Adventure BarChart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Adventure (Positivi)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0du8uu51840u6a1e9yoi01kgikcf].[Adventure (Positivi)]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CC8D75C5-F53C-4B05-B974-B754FC124524}' />
+    </window>
+    <window class='worksheet' name='Biography BarChart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Biography (Positivi)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0du8uu51840u6a1e9yoi01kgikcf].[Biography (Positivi)]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{547EF570-4BFE-4ED5-A7EC-46F4EA20E9BF}' />
+    </window>
+    <window class='worksheet' name='Drama BarChart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0du8uu51840u6a1e9yoi01kgikcf].[Drama (Positivi)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0du8uu51840u6a1e9yoi01kgikcf].[Drama (Positivi)]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3D790F2E-941A-4C60-A8BC-F780EC92FC1E}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Analisi del sentiment nei diversi generi'>
+      <viewpoints>
+        <viewpoint name='Adventure BarChart'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Biography BarChart'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Commedia BarChart'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Crime BarChart'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Drama BarChart'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{58E72D9F-46DF-417E-9A3F-BB2D1E767A1F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Adventure BarChart' width='64'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Analisi del sentiment nei diversi generi' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Biography BarChart' width='64'>
+      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
+      RHGuB24q3QsAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Commedia BarChart' width='64'>
+      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
+      2QAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Crime BarChart' width='64'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Drama BarChart' width='64'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
