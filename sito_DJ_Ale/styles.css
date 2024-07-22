@@ -1,0 +1,382 @@
+/* General Reset and Styling */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: white; /* Background color for a cinematic feel */
+  color: #fff; /* Text color for contrast */
+}
+
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align items horizontally */
+  background-color: white; /* Background color */
+  padding: 10px;
+  
+}
+
+/* Title */
+#title {
+  font-size: 3em; /* Larger font size for prominence */
+  margin: 0 10px 0 0; /* Margin to add space between title and image */
+  color: #FFD700; /* Gold color for a cinematic effect */
+  font-family: "Century Gothic";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Shadow for depth */
+}
+
+/* Title Image */
+.title-image {
+  height: 100px; /* Adjust the size as needed */
+  width: auto;
+  margin-left: 10px; /* Add space between the title and image */
+}
+
+
+/* Main Content */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Content Section */
+.content h1 {
+  font-size: 2.7em; /* Larger heading */
+  margin-bottom: 20px;
+  color: #FFD700; /* Gold color to match title */
+  text-align: center; /* Center align heading */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Shadow for emphasis */
+  font-family: "Century Gothic";
+}
+
+h1{
+  font-family: "Century Gothic";
+  color: #FFD700;
+  text-align: center;
+  font-size: 2.7em;
+}
+
+.content p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  margin: 0;
+  font-size: 1.1em; /* Slightly larger font size for readability */
+  text-align: justify; /* Justify text for a neat look */
+  color:black; /* Lighter color for readability */
+  margin-bottom: 20px; 
+}
+
+.content {
+  overflow: hidden; /* Per evitare problemi di contorno con il floating */
+}
+.content img {
+  height: 100px;
+  float: right;
+  margin-right: 10px; /* Spazio tra le immagini e il testo */
+}
+
+
+/* Parallax Container */
+
+
+/* Slideshow Container */
+.slideshow-container {
+  position: relative;
+  width: 90%; /* Riduci la larghezza come preferisci */
+  max-width: 900px; /* Imposta una larghezza massima per evitare che diventi troppo grande su schermi larghi */
+  height: 500px; /* Imposta l'altezza desiderata */
+  margin: 0 auto; /* Centra orizzontalmente il contenitore */
+  overflow: hidden; /* Assicurati che le slide non trabocchino */
+  border: 2px solid #ccc; /* Aggiungi un bordo se necessario */
+}
+
+/* Slide */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  opacity: 0; /* Opacità di default per slide nascoste */
+  transition: opacity 1s ease-in-out; /* Transizione fluida tra le slide */
+  display: flex; /* Flexbox per centrare l'immagine */
+  justify-content: center; /* Centratura orizzontale */
+  align-items: center; /* Centratura verticale */
+}
+
+/* Image in Slide */
+.slide img {
+  width: 100%; /* L'immagine copre il 100% della slide */
+  height: auto; /* Mantieni l'aspect ratio dell'immagine */
+  max-width: 100%; /* Evita che l'immagine trabocchi */
+  max-height: 100%; /* Evita che l'immagine trabocchi */
+}
+
+
+/* Parallax Effect */
+/*.parallax::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('immagine_2_forrest_prova.jpeg') center center / cover;
+  transform: translateZ(-1px) scale(1.5); 
+  z-index: -1;
+  will-change: transform;
+}
+
+.parallax::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}*/
+
+
+.paragrafo_0 {
+  position: relative;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: black; /* Ensure text color is visible */
+  background-color: white; /* Background color for visibility */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1.1em; /* Slightly larger font size for readability */
+  text-align: justify; /* Justify text for a neat look */
+  
+}
+
+
+
+
+
+/* Styling for the paragrafo_1 section */
+.paragrafo_1 {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: black; /* Ensure text color is visible */
+  background-color: white; /* Background color for visibility */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1.1em; /* Slightly larger font size for readability */
+  text-align: justify; /* Justify text for a neat look */
+  
+}
+
+.paragrafo_2 {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: black; /* Ensure text color is visible */
+  background-color: white; /* Background color for visibility */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1.1em; /* Slightly larger font size for readability */
+  text-align: justify; /* Justify text for a neat look */
+  
+}
+
+.paragrafo_3 {
+ padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: black; /* Ensure text color is visible */
+  background-color: white; /* Background color for visibility */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1.1em; /* Slightly larger font size for readability */
+  text-align: justify; /* Justify text for a neat look */
+  
+}
+
+.paragrafo_4 {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: black; /* Ensure text color is visible */
+  background-color: white; /* Background color for visibility */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1.1em; /* Slightly larger font size for readability */
+  text-align: justify; /* Justify text for a neat look */
+  
+}
+
+
+.paragrafo_5 {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: black; /* Ensure text color is visible */
+  background-color: white; /* Background color for visibility */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1.1em; /* Slightly larger font size for readability */
+  text-align: justify; /* Justify text for a neat look */
+  
+}
+
+.paragrafo_6 {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: black; /* Ensure text color is visible */
+  background-color: white; /* Background color for visibility */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1.1em; /* Slightly larger font size for readability */
+  text-align: justify; /* Justify text for a neat look */
+  
+}
+
+.paragrafo_7 {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: black; /* Ensure text color is visible */
+  background-color: white; /* Background color for visibility */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1.1em; /* Slightly larger font size for readability */
+  text-align: justify; /* Justify text for a neat look */
+  
+}
+
+.paragrafo_75 {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: black; /* Ensure text color is visible */
+  background-color: white; /* Background color for visibility */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1.1em; /* Slightly larger font size for readability */
+  text-align: justify; /* Justify text for a neat look */
+  
+}
+
+.paragrafo_8 {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: black; /* Ensure text color is visible */
+  background-color: white; /* Background color for visibility */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1.1em; /* Slightly larger font size for readability */
+  text-align: justify; /* Justify text for a neat look */
+  
+}
+
+/*parallax*/
+.parallax {
+  /* The image used */
+  background-image: url('parasite_2.png');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.parallax_2 {
+  /* The image used */
+  background-image: url('saltburn.png');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*Tableau*/
+.tableauPlaceholder {
+  display: block;
+  margin: 20px auto; /* Center the Tableau visualizations */
+  width: 100%;
+  max-width: 1366px;
+  text-align: center; /* Ensure the content is centered */
+}
+
+/* CSS per centrare e gestire i grafici con ID specifici */
+#viz1721552068673, #viz1721552362194 {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: 100%;
+}
+
+#viz1721552068673 object, #viz1721552362194 object {
+  width: 100%;
+  max-width: 1366px;
+  height: 795px; /* Altezza fissa per mantenere una visualizzazione coerente */
+}
+
+
+
+/* Aggiunge un po' di spazio tra le sezioni e i grafici */
+.paragrafo_3 + #viz1721552068673, 
+.paragrafo_3 + #viz1721552362194 {
+  margin-top: 40px;
+}
+
+.intro{
+  width: 60%;
+}
+
+#icona_1{
+  position: relative;
+  left: 50px;
+}
+#icona_2{
+  position: relative;
+  left: 60px;
+  top: 200px;
+}
+
+#icona_3{
+  position: relative;
+  left: 80%;
+  top: -300px;
+  width: 20%;
+}
+#icona_4{
+  position: relative;
+  left:40%;
+  top: -100px;
+  width: 20%;
+}
+
+/*.tableauViz {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}*/
+
+/*sentiment*/
+/*.tableauViz_2 {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
