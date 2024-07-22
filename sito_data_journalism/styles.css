@@ -51,11 +51,27 @@ main {
 }
 
 .content p {
+
   line-height: 1.6;
   margin-bottom: 20px;
+  margin: 0;
   font-size: 1.1em; /* Slightly larger font size for readability */
-  text-align: justify; /* Justify text for a neat look */
+  text-align: left; /* Justify text for a neat look */
   color:black; /* Lighter color for readability */
+  margin-bottom: 20px; 
+}
+
+.content {
+  overflow: hidden; /* Per evitare problemi di contorno con il floating */
+}
+.content img {
+  height: 100px;
+  float: right;
+  margin-right: 10px; /* Spazio tra le immagini e il testo */
+}
+
+.icona_1_p_0 {
+  margin-top: 5px; /* Spazio tra le due icone */
 }
 
 /* Parallax Container */
@@ -121,6 +137,7 @@ main {
 
 
 .paragrafo_0 {
+  position: relative;
   padding: 20px;
   max-width: 900px;
   margin: 0 auto;
@@ -132,6 +149,10 @@ main {
   text-align: justify; /* Justify text for a neat look */
   
 }
+
+
+
+
 
 /* Styling for the paragrafo_1 section */
 .paragrafo_1 {
@@ -161,7 +182,7 @@ main {
 }
 
 .paragrafo_3 {
-  padding: 20px;
+ padding: 20px;
   max-width: 900px;
   margin: 0 auto;
   color: black; /* Ensure text color is visible */
@@ -285,21 +306,34 @@ main {
 
 /*Tableau*/
 .tableauPlaceholder {
-  position: relative;
+  display: block;
+  margin: 20px auto; /* Center the Tableau visualizations */
   width: 100%;
-  height: 0;
-  /*padding-bottom: 75%; *//* Proporzione 4:3 per il grafico */
-  margin-top: 20px;
+  max-width: 1366px;
+  text-align: center; /* Ensure the content is centered */
 }
 
-.tableauPlaceholder_2 {
-  position: absolute;
-  width: 60%;
-  height: 0;
-  /*padding-bottom: 75%; *//* Proporzione 4:3 per il grafico */
-  margin-top: 20px;
+/* CSS per centrare e gestire i grafici con ID specifici */
+#viz1721552068673, #viz1721552362194 {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: 100%;
 }
 
+#viz1721552068673 object, #viz1721552362194 object {
+  width: 100%;
+  max-width: 1366px;
+  height: 795px; /* Altezza fissa per mantenere una visualizzazione coerente */
+}
+
+
+
+/* Aggiunge un po' di spazio tra le sezioni e i grafici */
+.paragrafo_3 + #viz1721552068673, 
+.paragrafo_3 + #viz1721552362194 {
+  margin-top: 40px;
+}
 
 /*.tableauViz {
   position: absolute;
