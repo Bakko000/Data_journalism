@@ -1,21 +1,59 @@
 body{
     height: 100%;
     margin: 0;
-    font-family: 'Baskervville', sans-serif;
     background-color: white; /* Background color for a cinematic feel */
     color: black; /* Text color for contrast */
   }
-h2{
-    font-family: "Baskervville";
-    color: black;
-    width: 80%;
+
+
+  h1{
+    font-family: "Century Gothic", sans-serif;
+    color: #FFD700;
     text-align: center;
+    font-size: 2.7em;
+  }
+
+  .content{
+    
+      position: relative;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      color: black; /* Ensure text color is visible */
+      background-color: white; /* Background color for visibility */
+      line-height: 1.6;
+      margin-bottom: 20px;
+      font-size: 1.1em; /* Slightly larger font size for readability */
+      text-align: justify; /* Justify text for a neat look */
+      
+    
+  }
+  h2{
+    font-family: 'Baskervville', sans-serif;
+    color: black;
+    width: 95%;
+    text-align: justify;
   }
 
   p{
     position: relative;
-    padding: 20px;
-    max-width: 900px;
+    /*padding: 10px;*/
+    font-family: 'Baskervville', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    color: black; /* Ensure text color is visible */
+    background-color: white; /* Background color for visibility */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.1em; /* Slightly larger font size for readability */
+    text-align: justify; /* Justify text for a neat look */
+  }
+
+  #prova{
+    position: relative;
+    /*padding: 10px;*/
+    font-family: 'Baskervville', sans-serif;
+    width: 100%;
     margin: 0 auto;
     color: black; /* Ensure text color is visible */
     background-color: white; /* Background color for visibility */
